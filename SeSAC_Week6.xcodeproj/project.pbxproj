@@ -16,6 +16,12 @@
 		981FDFCF28A0909600F99E73 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 981FDFCE28A0909600F99E73 /* Kingfisher */; };
 		981FDFD228A090AA00F99E73 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 981FDFD128A090AA00F99E73 /* Alamofire */; };
 		981FDFD528A090C600F99E73 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 981FDFD428A090C600F99E73 /* SwiftyJSON */; };
+		981FDFD928A0911300F99E73 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 981FDFD828A0911300F99E73 /* .gitignore */; };
+		981FDFDB28A0916B00F99E73 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FDFDA28A0916B00F99E73 /* APIKey.swift */; };
+		981FDFDD28A094AA00F99E73 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FDFDC28A094AA00F99E73 /* EndPoint.swift */; };
+		981FDFDF28A0951E00F99E73 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FDFDE28A0951E00F99E73 /* URL+Extension.swift */; };
+		981FDFE228A0A7BD00F99E73 /* KakaoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FDFE128A0A7BD00F99E73 /* KakaoAPIManager.swift */; };
+		981FDFE428A0AC1300F99E73 /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981FDFE328A0AC1300F99E73 /* ClosureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		981FDFC228A0905E00F99E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		981FDFC528A0905E00F99E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		981FDFC728A0905E00F99E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		981FDFD828A0911300F99E73 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		981FDFDA28A0916B00F99E73 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		981FDFDC28A094AA00F99E73 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		981FDFDE28A0951E00F99E73 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		981FDFE128A0A7BD00F99E73 /* KakaoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAPIManager.swift; sourceTree = "<group>"; };
+		981FDFE328A0AC1300F99E73 /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,7 @@
 		981FDFAD28A0905700F99E73 = {
 			isa = PBXGroup;
 			children = (
+				981FDFD828A0911300F99E73 /* .gitignore */,
 				981FDFB828A0905700F99E73 /* SeSAC_Week6 */,
 				981FDFB728A0905700F99E73 /* Products */,
 			);
@@ -69,8 +82,21 @@
 				981FDFC228A0905E00F99E73 /* Assets.xcassets */,
 				981FDFC428A0905E00F99E73 /* LaunchScreen.storyboard */,
 				981FDFC728A0905E00F99E73 /* Info.plist */,
+				981FDFDA28A0916B00F99E73 /* APIKey.swift */,
+				981FDFE028A0A78A00F99E73 /* Network */,
+				981FDFE328A0AC1300F99E73 /* ClosureViewController.swift */,
 			);
 			path = SeSAC_Week6;
+			sourceTree = "<group>";
+		};
+		981FDFE028A0A78A00F99E73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				981FDFDE28A0951E00F99E73 /* URL+Extension.swift */,
+				981FDFDC28A094AA00F99E73 /* EndPoint.swift */,
+				981FDFE128A0A7BD00F99E73 /* KakaoAPIManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				981FDFD928A0911300F99E73 /* .gitignore in Resources */,
 				981FDFC628A0905E00F99E73 /* LaunchScreen.storyboard in Resources */,
 				981FDFC328A0905E00F99E73 /* Assets.xcassets in Resources */,
 				981FDFC128A0905700F99E73 /* Main.storyboard in Resources */,
@@ -156,7 +183,12 @@
 			files = (
 				981FDFBE28A0905700F99E73 /* ViewController.swift in Sources */,
 				981FDFBA28A0905700F99E73 /* AppDelegate.swift in Sources */,
+				981FDFE428A0AC1300F99E73 /* ClosureViewController.swift in Sources */,
+				981FDFDD28A094AA00F99E73 /* EndPoint.swift in Sources */,
+				981FDFDB28A0916B00F99E73 /* APIKey.swift in Sources */,
+				981FDFE228A0A7BD00F99E73 /* KakaoAPIManager.swift in Sources */,
 				981FDFBC28A0905700F99E73 /* SceneDelegate.swift in Sources */,
+				981FDFDF28A0951E00F99E73 /* URL+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
